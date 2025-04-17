@@ -7,6 +7,12 @@ import {
   Shield,
   ArrowRight,
   ChevronDown,
+  Workflow,
+  LayoutDashboard,
+  BadgeCheck,
+  ShieldCheck,
+  Gamepad,
+  MailCheck,
 } from "lucide-react";
 import Fundo from "../assets/images/fundo.png";
 import {
@@ -388,6 +394,103 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Serviços Oferecidos */}
+      <section className="py-20 bg-white dark:bg-slate-900" id="servicos">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+                O que podemos fazer por você
+              </span>
+            </h2>
+            <p className="text-slate-600 dark:text-slate-300">
+              Soluções práticas, modernas e adaptáveis para impulsionar seus
+              resultados.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-700 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+              <div className="w-12 h-12 bg-violet-100 dark:bg-violet-900 rounded-xl flex items-center justify-center mb-4">
+                <Workflow className="text-violet-700 dark:text-violet-300" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-slate-900 dark:text-white">
+                Automação de Tarefas
+              </h3>
+              <p className="text-slate-600 dark:text-slate-300 text-sm">
+                Elimine processos manuais com fluxos automatizados inteligentes.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-700 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+              <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-xl flex items-center justify-center mb-4">
+                <LayoutDashboard className="text-indigo-700 dark:text-indigo-300" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-slate-900 dark:text-white">
+                Landing Pages Atraentes
+              </h3>
+              <p className="text-slate-600 dark:text-slate-300 text-sm">
+                Criação de páginas de alta conversão, modernas e responsivas.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-700 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+              <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900 rounded-xl flex items-center justify-center mb-4">
+                <BadgeCheck className="text-emerald-700 dark:text-emerald-300" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-slate-900 dark:text-white">
+                Sistemas de Credenciamento
+              </h3>
+              <p className="text-slate-600 dark:text-slate-300 text-sm">
+                Controle de inscrições e acesso com segurança e eficiência.
+              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-700 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+              <div className="w-12 h-12 bg-rose-100 dark:bg-rose-900 rounded-xl flex items-center justify-center mb-4">
+                <ShieldCheck className="text-rose-700 dark:text-rose-300" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-slate-900 dark:text-white">
+                Sistemas de Portaria
+              </h3>
+              <p className="text-slate-600 dark:text-slate-300 text-sm">
+                Gestão de entradas e visitantes em ambientes controlados.
+              </p>
+            </div>
+
+            {/* Card 5 */}
+            <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-700 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+              <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900 rounded-xl flex items-center justify-center mb-4">
+                <Gamepad className="text-orange-700 dark:text-orange-300" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-slate-900 dark:text-white">
+                Gamificação
+              </h3>
+              <p className="text-slate-600 dark:text-slate-300 text-sm">
+                Torne sua plataforma mais engajante com pontos e recompensas.
+              </p>
+            </div>
+
+            {/* Card 6 */}
+            <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-700 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+              <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-xl flex items-center justify-center mb-4">
+                <MailCheck className="text-teal-700 dark:text-teal-300" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-slate-900 dark:text-white">
+                E-mails Automáticos
+              </h3>
+              <p className="text-slate-600 dark:text-slate-300 text-sm">
+                Envio de mensagens personalizadas com base em ações e eventos.
+              </p>
             </div>
           </div>
         </div>
